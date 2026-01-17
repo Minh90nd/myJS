@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px; /* Giới hạn độ rộng như một chiếc điện thoại */
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Header Styles */
+.user-status {
+    background: linear-gradient(135deg, #1e90ff, #0052cc);
+    padding: 25px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.status-badge {
+    background-color: #2ecc71;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* Dashboard Grid Styles */
+.dashboard-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia 2 cột */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.menu-item {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:active {
+    transform: scale(0.95);
+    background-color: #f9f9f9;
+}
+
+.menu-item span {
+    color: #333;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Icon Box Colors */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.color-import { background-color: #e67e22;} /* Màu cam chuyên cho nhập kho */
+.color-1 { background-color: #ff4757; } /* Sell */
+.color-2 { background-color: #2ed573; } /* Sản phẩm */
+.color-3 { background-color: #ffa502; } /* Hóa đơn */
+.color-4 { background-color: #3742fa; } /* Báo cáo */
+.color-5 { background-color: #747d8c; } /* Khách hàng */
+.color-6 { background-color: #57606f; } /* Cài đặt */
